@@ -5,4 +5,4 @@ php:
 #  - hhvm
 script:
   - phpunit Test.php
-  - echo $TRAVIS_TAG
+  - if [ $TRAVIS_TAG ] echo "hi!"; fi
